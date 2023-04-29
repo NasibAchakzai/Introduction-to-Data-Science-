@@ -45,5 +45,75 @@ Mapping types: These are collections of key-value pairs:
 Dictionaries: mutable key-value mapping enclosed in curly braces {}.
 Set types: These are collections of unique elements:
 Sets: mutable unordered collection of unique elements enclosed in curly braces {}.
+data types include:
+ #### Numeric types:
+x = 42        # int
+y = 3.14      # float
+z = 1 + 2j    # complex
+
+#### Boolean type:
+is_true = True
+is_false = False
+
+#### List type
+my_list = [1, 2, 3, 'four', 5.0]
+
+#### Tuple type
+my_tuple = (1, 2, 3, 'four', 5.0)
+
+#### Dictionary type
+my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+#### Set type
+my_set = {1, 2, 3, 4, 5}
+Python also provides a variety of built-in functions and methods for working with these data types, such as len(), append(), remove(), and many more.
 
 
+
+
+
+
+bool (True or False)
+Sequence types:
+
+list (mutable ordered sequence of elements)
+tuple (immutable ordered sequence of elements)
+range (immutable sequence of numbers)
+str (immutable sequence of characters)
+bytes (immutable sequence of bytes)
+bytearray (mutable sequence of bytes)
+Mapping types:
+
+dict (mutable key-value mapping)
+Set types:
+
+set (mutable unordered collection of unique elements)
+## conditional statements
+ conditional statements allow you to execute different blocks of code depending on whether a certain condition is true or false. The most common conditional statements in Python are if, elif, and else.
+ ####
+a=8
+
+if(a %2 ==0):
+    print("this even number")
+else:
+        print("this Odd number")
+## loop
+loop is used to iterate over a sequence or other iterable object and execute a block of code for each item in the sequence. The basic syntax of a for loop in Python is as follows:
+#
+numbers = [1, 2, 3, 4, 5]
+
+for num in numbers:
+    print(num)
+  ## CSV files
+   you can work with CSV (Comma Separated Values) files using the csv module. This module provides functionality to read and write CSV files in various formats including comma-separated values, tab-separated values, and other delimiter-separated values.
+
+To read a CSV file in Python, you can use the csv.reader() function. This function takes a file object as input and returns a reader object which can be used to iterate over the rows in the CSV file. Here's an example:
+####
+import csv
+
+with open('example.csv', 'r') as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
+
+    
